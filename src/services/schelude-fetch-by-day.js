@@ -5,7 +5,7 @@ export async function scheduleFetchByDay({ date }){
     try {
         //Fazendo a requisição
         const response = await fetch(`${apiConfig.baseURL}/schedules`)       
-        console.log(date)
+        
         //Converte para JSON
         const data = await response.json()        
         
